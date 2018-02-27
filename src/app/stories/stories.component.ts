@@ -1,27 +1,25 @@
 import { Component, OnInit } from '@angular/core';
 import { Story } from '../stories.model';
 import { Router } from '@angular/router';
+import { StoryService} from '../story.service';
 
 @Component({
   selector: 'app-stories',
   templateUrl: './stories.component.html',
-  styleUrls: ['./stories.component.css']
+  styleUrls: ['./stories.component.css'],
+  providers: [StoryService]
 })
 
 export class StoriesComponent implements OnInit {
+stories: Story[];
 
-
-constructor(private router: Router) { }
-stories: Story[] = [
-  new Story("My Day", "Look at all the awesome things I did today", 1, ""),
-  new Story("At the Beach", "The waves, the sand, and the food", 2, ""),
-  new Story("At the Mountain", "It snowed a lot", 3, "")
-];
+constructor(private router: Router, private storyService: StoryService) { }
 
 goToDetailsPage(clickedStory: Story) {
   this.router.navigate(['stories', clickedStory.id])
 }
   ngOnInit() {
+    this.stories = this.storyService.getStories();
   }
 
 }
