@@ -1,0 +1,8 @@
+<h2>Advice Forum</h2>
+
+<div *ngFor="let post of posts" (click)="goToDetailsPage(post)" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{post.title}}</em><br><span class="post-content">{{post.content}}</span></h3>
+    <hr>
+  </div>
+</div>

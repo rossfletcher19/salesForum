@@ -1,0 +1,9 @@
+<h2>Stories</h2>
+<hr>
+
+<div *ngFor="let story of stories" (click)="goToDetailsPage(story)" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{story.title}}</em><br><span class="post-content">{{story.content}}</span></h3>
+    <hr>
+  </div>
+</div>
