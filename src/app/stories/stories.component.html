@@ -1,10 +1,9 @@
 <h3>Stories sub-forum</h3>
 <hr>
-
 <div *ngFor="let story of stories | async" (click)="goToDetailsPage(story)" class="panel panel-default">
   <div class="panel-body">
     <h3><em>{{story.title}}</em><br></h3>
-    <h5>This post has id number: {{story.id}}</h5>
+    <h5>postId: {{story.id}}</h5>
     <hr>
   </div>
 </div>

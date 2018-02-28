@@ -9,6 +9,9 @@ import { StoriesDetailComponent } from './stories-detail/stories-detail.componen
 import { CurrenteventsComponent } from './currentevents/currentevents.component';
 import { EventDetailComponent } from './event-detail/event-detail.component';
 import { AdminComponent }   from './admin/admin.component';
+import { AddComponent } from './add/add.component';
+
+
 
 
 const appRoutes: Routes = [
@@ -47,6 +50,14 @@ const appRoutes: Routes = [
  {
     path: 'admin',
     component: AdminComponent
+  },
+  {
+    path: 'advice/addPost',
+    component: AddComponent
+  },
+  {
+    path: 'add',
+    component: AddComponent
   }
 ];
 

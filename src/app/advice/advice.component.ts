@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { PostService } from '../post.service';
 import { FirebaseListObservable } from 'angularfire2/database';
 
+
 @Component({
   selector: 'app-advice',
   templateUrl: './advice.component.html',

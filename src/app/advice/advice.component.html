@@ -3,7 +3,7 @@
 <div *ngFor="let post of posts | async" (click)="goToDetailsPage(post)" class="panel panel-default">
   <div class="panel-body">
     <h3><em>{{post.title}}</em><br></h3>
-    <h5>This post has id number: {{post.id}}</h5>
+    <h5>postId: {{post.id}}</h5>
     <hr>
   </div>
 </div>

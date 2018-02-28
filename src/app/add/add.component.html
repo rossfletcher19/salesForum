@@ -1,0 +1,29 @@
+
+    <h3>Add to the forum:</h3>
+    <div>
+      <h5>What forum do you want to add to??</h5>
+      <br>
+      <textarea #newForum placeholder="advice, story, or currentevent"></textarea>
+    </div>
+    <hr>
+    <h5>Add your content:</h5>
+
+      <div>
+        <label>Title:</label>
+        <br>
+        <input #newTitle>
+      </div>
+
+      <div>
+        <label>Content</label>
+        <br>
+        <textarea #newContent></textarea>
+      </div>
+
+      <div>
+        <label>Possible Link to article:</label>
+        <br>
+        <input #newLink>
+      </div>
+      <br>
+      <button (click)="submitForm(newForum.value, newTitle.value, newContent.value, newLink.value); newTitle.value=''; newContent.value=''; newLink.value=''">Post!</button>
