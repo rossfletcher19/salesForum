@@ -43,17 +43,17 @@ export class AddService {
     this.stories.push(newStory);
   }
 
-  getPostById(postId: string) {
-  return this.database.object('/posts/' + postId);
-  }
-
-  getEventById(eventId: string) {
-  return this.database.object('/events/' + eventId);
-  }
-
-  getStoryById(storyId: string) {
-  return this.database.object('/stories/' + storyId);
-  }
+  // getPostById(postId: string) {
+  // return this.database.object('/posts/' + postId);
+  // }
+  //
+  // getEventById(eventId: string) {
+  // return this.database.object('/events/' + eventId);
+  // }
+  //
+  // getStoryById(storyId: string) {
+  // return this.database.object('/stories/' + storyId);
+  // }
 
   // updateAlbum(localUpdatedAlbum){
   //   var albumEntryInFirebase = this.getAlbumById(localUpdatedAlbum.$key);

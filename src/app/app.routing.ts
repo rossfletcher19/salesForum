@@ -52,10 +52,6 @@ const appRoutes: Routes = [
     component: AdminComponent
   },
   {
-    path: 'advice/addPost',
-    component: AddComponent
-  },
-  {
     path: 'add',
     component: AddComponent
   }
