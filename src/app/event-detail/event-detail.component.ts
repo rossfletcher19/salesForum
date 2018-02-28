@@ -1,32 +1,30 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
-import { Post } from '../post.model';
-import { PostService } from '../post.service';
+import { Event } from '../event.model';
+import { EventService } from '../event.service';
 import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
-  selector: 'app-advice-post-detail',
-  templateUrl: './advice-post-detail.component.html',
-  styleUrls: ['./advice-post-detail.component.css'],
-  providers: [PostService]
+  selector: 'app-event-detail',
+  templateUrl: './event-detail.component.html',
+  styleUrls: ['./event-detail.component.css'],
+  providers: [EventService]
 })
-export class AdvicePostDetailComponent implements OnInit {
+export class EventDetailComponent implements OnInit {
   id: string;
-  postToDisplay;
+  eventToDisplay;
 
   constructor(
     private route: ActivatedRoute,
     private location: Location,
-    private postService: PostService
-
-  ) { }
+    private eventService: EventService) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
       this.id = urlParameters['id'];
     });
-    this.postToDisplay = this.postService.getPostById(this.id);
+    this.eventToDisplay = this.eventService.getEventById(this.id);
   }
 
 }

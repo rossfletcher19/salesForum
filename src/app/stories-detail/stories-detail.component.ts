@@ -3,6 +3,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { Story } from '../stories.model';
 import { StoryService } from '../story.service';
+import { FirebaseObjectObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-stories-detail',
@@ -12,8 +13,8 @@ import { StoryService } from '../story.service';
 })
 
 export class StoriesDetailComponent implements OnInit {
-  id: number;
-  storyToDisplay: Story;
+  id: string;
+  storyToDisplay;
 
   constructor(
     private route: ActivatedRoute,
@@ -23,7 +24,7 @@ export class StoriesDetailComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-      this.id = parseInt(urlParameters['id']);
+      this.id = urlParameters['id'];
     });
     this.storyToDisplay = this.storyService.getStoryById(this.id);
   }

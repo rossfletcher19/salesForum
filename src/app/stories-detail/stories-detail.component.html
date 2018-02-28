@@ -1,5 +1,5 @@
 <div>
   <h5>Story Details:</h5>
-  <h3>{{storyToDisplay.title}}</h3>
-  <h4>{{storyToDisplay.content}}</h4>
+  <h3>{{(storyToDisplay| async)?.title}}</h3>
+  <h4>{{(storyToDisplay| async)?.content}}</h4>
 </div>

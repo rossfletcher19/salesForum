@@ -1,22 +1,28 @@
 import { Injectable } from '@angular/core';
 import { Story } from './stories.model';
-import { STORIES } from './mock-story';
+// import { STORIES } from './mock-story';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+
 
 
 @Injectable()
 export class StoryService {
+  stories: FirebaseListObservable<any[]>;
 
-  constructor() { }
+  constructor(private database: AngularFireDatabase) {
+    this.stories = database.list('stories');
+  }
 
 getStories() {
-  return STORIES;
+  return this.stories;
 }
 
-  getStoryById(id: number){
-    for(var i = 0; i <= STORIES.length - 1; i++) {
-      if (STORIES[i].id === id) {
-        return STORIES[i];
-      }
-    }
+  getStoryById(id: string){
+    return this.database.object('/stories/' + id);
+    // for(var i = 0; i <= STORIES.length - 1; i++) {
+    //   if (STORIES[i].id === id) {
+    //     return STORIES[i];
+    //   }
+    // }
   }
 }

@@ -1,0 +1,9 @@
+<h3>Current Events, Trends and Insite sub-forum</h3>
+<hr>
+<div *ngFor="let event of events | async" (click)="goToDetailPage(event)" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{event.title}}</em><br></h3>
+    <h5>This current event has id nunmber: {{event.id}}</h5>
+    <hr>
+  </div>
+</div>

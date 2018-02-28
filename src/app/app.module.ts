@@ -11,6 +11,19 @@ import { AdviceComponent } from './advice/advice.component';
 import { AdvicePostDetailComponent } from './advice-post-detail/advice-post-detail.component';
 import { StoriesComponent } from './stories/stories.component';
 import { StoriesDetailComponent } from './stories-detail/stories-detail.component';
+import { CurrenteventsComponent } from './currentevents/currentevents.component';
+import { EventDetailComponent } from './event-detail/event-detail.component';
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AdminComponent } from './admin/admin.component';
+
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
 
 @NgModule({
   declarations: [
@@ -20,13 +33,18 @@ import { StoriesDetailComponent } from './stories-detail/stories-detail.componen
     AdviceComponent,
     AdvicePostDetailComponent,
     StoriesComponent,
-    StoriesDetailComponent
+    StoriesDetailComponent,
+    CurrenteventsComponent,
+    EventDetailComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]

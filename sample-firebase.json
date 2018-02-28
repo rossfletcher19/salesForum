@@ -1,0 +1,49 @@
+{ "posts": [{
+    "title": " How can I increase sales?",
+    "content": "For now here is a link to an article: http://www.smallbusinessbonfire.com/3-ways-to-use-technology-to-increase-sales/",
+    "id": "1",
+    "date": "02/28/2017"
+    }, {
+      "title": " Working in Sales",
+      "content": "For now here is a link to an article: https://www.recruiter.com/i/3-reasons-to-work-in-sales-for-a-tech-startup/",
+      "id": "2",
+      "date": "02/28/2017"
+      }, {
+        "title": " Sales at a Tech Startup",
+        "content": "For now here is a link to an article: https://www.mergersandinquisitions.com/investment-banking-to-sales-tech-start-up/",
+        "id": "3",
+        "date": "02/28/2017"
+  }],
+"stories": [{
+    "title": "My Day",
+    "content": "Look at all the awesome things I did today",
+    "id": "1",
+    "date": "02/28/2017"
+    }, {
+      "title": "At the Beach",
+      "content": "The waves, the sand, and the food",
+      "id": "2",
+      "date": "02/28/2017"
+      }, {
+        "title": "At the Mountain",
+        "content": "It snowed a lot",
+        "id": "3",
+        "date": "02/28/2017"
+  }],
+"events": [{
+    "title": "Bill Gates is Not a Fan of Crytocurrencies",
+    "content": "Here is link to the story for now: https://www.axios.com/bill-gates-1519758678-325b19d5-9779-43fc-af0b-1b1e13ad0134.html",
+    "id": "1",
+    "date": "02/28/2017"
+    }, {
+      "title": "Amazon is acquiring doorbell videocamera startup Ring",
+      "content": "Here is link to the story for now: http://www.businessinsider.com/amazon-acquiring-doorbell-videocamera-startup-ring-2018-2",
+      "id": "2",
+      "date": "02/28/2017"
+      }, {
+        "title": "Automated Vehicles Can't Save Cities",
+        "content": "Here is link to the story for now: https://www.nytimes.com/interactive/2018/02/27/opinion/automated-vehicles-cant-save-cities.html?action=click&pgtype=Homepage&clickSource=story-heading&module=opinion-c-col-right-region&region=opinion-c-col-right-region&WT.nav=opinion-c-col-right-region",
+        "id": "3",
+        "date": "02/28/2017"
+  }]
+}

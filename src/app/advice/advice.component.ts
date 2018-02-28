@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Post } from  '../post.model';
 import { Router } from '@angular/router';
 import { PostService } from '../post.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-advice',
@@ -10,13 +11,14 @@ import { PostService } from '../post.service';
   providers: [PostService]
 })
 export class AdviceComponent implements OnInit {
-  posts: Post[];
+  posts: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
 
   constructor(private router: Router, private postService: PostService) { }
 
 
-  goToDetailsPage(clickedPost: Post) {
-    this.router.navigate(['posts', clickedPost.id])
+  goToDetailsPage(clickedPost) {
+    this.router.navigate(['posts', clickedPost.$key])
   }
 
   ngOnInit() {

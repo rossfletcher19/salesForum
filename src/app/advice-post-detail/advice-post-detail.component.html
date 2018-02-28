@@ -1,6 +1,6 @@
 <hr>
 <div>
   <h5>Post Details:</h5>
-  <h3>{{postToDisplay.title}}</h3>
-  <p>{{postToDisplay.content}}</p>
+  <h3>{{(postToDisplay| async)?.title}}</h3>
+  <p>{{(postToDisplay| async)?.content}}</p>
 </div>
