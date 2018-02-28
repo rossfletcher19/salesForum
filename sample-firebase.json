@@ -1,48 +1,57 @@
 { "posts": [{
     "title": " How can I increase sales?",
-    "content": "For now here is a link to an article: http://www.smallbusinessbonfire.com/3-ways-to-use-technology-to-increase-sales/",
+    "content": "For now here is a link to an article: ",
+    "link": "http://www.smallbusinessbonfire.com/3-ways-to-use-technology-to-increase-sales/",
     "id": "1",
     "date": "02/28/2017"
     }, {
       "title": " Working in Sales",
-      "content": "For now here is a link to an article: https://www.recruiter.com/i/3-reasons-to-work-in-sales-for-a-tech-startup/",
+      "content": "For now here is a link to an article: ",
+      "link": "https://www.recruiter.com/i/3-reasons-to-work-in-sales-for-a-tech-startup/",
       "id": "2",
       "date": "02/28/2017"
       }, {
         "title": " Sales at a Tech Startup",
-        "content": "For now here is a link to an article: https://www.mergersandinquisitions.com/investment-banking-to-sales-tech-start-up/",
+        "content": "For now here is a link to an article: ",
+        "link": "https://www.mergersandinquisitions.com/investment-banking-to-sales-tech-start-up/",
         "id": "3",
         "date": "02/28/2017"
   }],
 "stories": [{
-    "title": "My Day",
-    "content": "Look at all the awesome things I did today",
+    "title": "Samsung Galaxy S9 and S9 Plus: price, specs and release",
+    "content": "Both phones boast a revamped camera and super-stylish design but will they beat off competition from Apple?",
+    "link": "http://www.theweek.co.uk/smartphones/91276/samsung-galaxy-s9-price-specs-and-release",
     "id": "1",
     "date": "02/28/2017"
     }, {
-      "title": "At the Beach",
-      "content": "The waves, the sand, and the food",
+      "title": "Steve Jobs’s error-filled CV to fetch $50,000 at auction",
+      "content": "The job application form was written shortly after he dropped out of university, three years before he co-founded Apple",
+      "link": "http://www.theweek.co.uk/smartphones/91276/samsung-galaxy-s9-price-specs-and-release",
       "id": "2",
       "date": "02/28/2017"
       }, {
-        "title": "At the Mountain",
-        "content": "It snowed a lot",
+        "title": "Can AI be used to improve patient care?",
+        "content": "New system from Google’s DeepMind could spot critical symptoms before doctors",
+        "link": "http://www.theweek.co.uk/artificial-intelligence/91950/can-ai-be-used-to-improve-patient-care",
         "id": "3",
         "date": "02/28/2017"
   }],
 "events": [{
     "title": "Bill Gates is Not a Fan of Crytocurrencies",
-    "content": "Here is link to the story for now: https://www.axios.com/bill-gates-1519758678-325b19d5-9779-43fc-af0b-1b1e13ad0134.html",
+    "content": "Here is link to the story for now: ",
+    "link": "https://www.axios.com/bill-gates-1519758678-325b19d5-9779-43fc-af0b-1b1e13ad0134.html",
     "id": "1",
     "date": "02/28/2017"
     }, {
       "title": "Amazon is acquiring doorbell videocamera startup Ring",
-      "content": "Here is link to the story for now: http://www.businessinsider.com/amazon-acquiring-doorbell-videocamera-startup-ring-2018-2",
+      "content": "Here is link to the story for now: ",
+      "link": "http://www.businessinsider.com/amazon-acquiring-doorbell-videocamera-startup-ring-2018-2",
       "id": "2",
       "date": "02/28/2017"
       }, {
-        "title": "Automated Vehicles Can't Save Cities",
-        "content": "Here is link to the story for now: https://www.nytimes.com/interactive/2018/02/27/opinion/automated-vehicles-cant-save-cities.html?action=click&pgtype=Homepage&clickSource=story-heading&module=opinion-c-col-right-region&region=opinion-c-col-right-region&WT.nav=opinion-c-col-right-region",
+        "title": "SpaceX to help Vodafone and Nokia install first 4G signal on the Moon",
+        "content": "Autonomous rovers will stream HD video from lunar surface back to Earth",
+        "link": "http://www.theweek.co.uk/91979/spacex-to-help-vodafone-and-nokia-install-first-4g-signal-on-the-moon",
         "id": "3",
         "date": "02/28/2017"
   }]
