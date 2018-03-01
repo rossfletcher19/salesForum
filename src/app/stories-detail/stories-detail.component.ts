@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Location } from '@angular/common';
 import { Story } from '../stories.model';
 import { StoryService } from '../story.service';
@@ -14,12 +14,14 @@ import { FirebaseObjectObservable } from 'angularfire2/database';
 
 export class StoriesDetailComponent implements OnInit {
   id: string;
+  currentRoute: string = this.router.url;
   storyToDisplay;
 
   constructor(
     private route: ActivatedRoute,
     private location: Location,
-    private storyService: StoryService
+    private storyService: StoryService,
+    private router: Router
   ) { }
 
   ngOnInit() {

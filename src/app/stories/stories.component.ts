@@ -22,6 +22,7 @@ goToDetailsPage(clickedStory) {
 }
   ngOnInit() {
     this.stories = this.storyService.getStories();
+    console.log(this.router.url);
   }
 
 }

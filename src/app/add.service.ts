@@ -55,10 +55,14 @@ export class AddService {
   // return this.database.object('/stories/' + storyId);
   // }
 
-  // updateAlbum(localUpdatedAlbum){
-  //   var albumEntryInFirebase = this.getAlbumById(localUpdatedAlbum.$key);
-  //   albumEntryInFirebase.update({title: localUpdatedAlbum.title, artist: localUpdatedAlbum.artist, description: localUpdatedAlbum.description, genre: localUpdatedAlbum.genre});
-  // }
+  getStoryById(id: string) {
+  return this.database.object('/stories/' + id);
+  }
+
+  updateStory(localUpdatedStory) {
+    var albumEntryInFirebase = this.getStoryById(localUpdatedStory.$key);
+    albumEntryInFirebase.update({title: localUpdatedStory.title, content: localUpdatedStory.content, link: localUpdatedStory.link});
+  }
   //
   // deleteAlbum(localAlbumToDelete){
   //   var albumEntryInFirebase = this.getAlbumById(localAlbumToDelete.$key);

@@ -2,8 +2,8 @@
 <hr>
 <div *ngFor="let event of events | async" (click)="goToDetailPage(event)" class="panel panel-default">
   <div class="panel-body">
-    <h3><em>{{event.title}}</em><br></h3>
-    <h5>postId: {{event.id}}</h5>
+    <h4><em>{{event.title}}</em><br></h4>
+    <h6>postId: {{event.id}}</h6>
     <hr>
   </div>
 </div>
