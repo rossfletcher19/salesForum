@@ -8,34 +8,19 @@ import { EventService } from '../event.service';
 import { Router } from '@angular/router';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
-
 @Component({
-  selector: 'app-admin',
-  templateUrl: './admin.component.html',
-  styleUrls: ['./admin.component.css'],
+  selector: 'app-delete',
+  templateUrl: './delete.component.html',
+  styleUrls: ['./delete.component.css'],
   providers: [PostService, StoryService, EventService]
 })
-
-export class AdminComponent implements OnInit {
+export class DeleteComponent implements OnInit {
   stories: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
-
 
   constructor(private router: Router, postService: PostService, private storyService: StoryService, private eventService: EventService) { }
 
   ngOnInit() {
-    this.stories = this.storyService.getStories();
-  }
-
-  goToDetailsPage(clickedStory) {
-    this.router.navigate(['stories', clickedStory.$key])
-    console.log(clickedStory.$key);
-  }
-
-  deleteStoryEntry(clickedStory) {
-
-
-
   }
 
 }

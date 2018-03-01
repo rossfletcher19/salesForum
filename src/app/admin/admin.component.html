@@ -1,3 +1,20 @@
-<p>
-  admin works!
-</p>
+
+
+<!-- <app-edit-story></app-edit-story> -->
+<hr>
+<h3>Stories.admin</h3>
+<hr>
+<div *ngFor="let story of stories | async" class="panel panel-default">
+  <div class="panel-body">
+    <h4 (click)="goToDetailsPage(story)"><em>{{story.title}}</em><br></h4>
+    <h6>postId: {{story.$key}}</h6>
+    <div *ngIf="currentRoute === '/admin'">
+      <app-delete></app-delete>
+    </div>
+    <hr>
+
+  </div>
+</div>
+
+
+<!-- <app-edit-post></app-edit-post> -->

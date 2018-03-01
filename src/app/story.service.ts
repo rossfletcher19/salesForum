@@ -25,6 +25,7 @@ getStories() {
     //   }
     // }
   }
+
   updateStory(localUpdateStory){
     var storyEntryInFirebase = this.getStoryById(localUpdateStory.$key);
     storyEntryInFirebase.update({title: localUpdateStory.title, content: localUpdateStory.content,  link: localUpdateStory.link});
