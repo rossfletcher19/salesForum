@@ -2,7 +2,11 @@
     <h3>Add to the forum:</h3>
     <div>
       <h5>What forum do you want to add to??</h5>
-      <textarea #newForum placeholder="advice, story, or currentevent"></textarea>
+      <select #newForum>
+        <option value="advice">advice</option>
+        <option value="story">story</option>
+        <option value="currentevent">currentevent</option>
+      </select>
     </div>
     <hr>
     <h5>Add your content:</h5>

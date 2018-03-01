@@ -4,6 +4,7 @@ import { Location } from '@angular/common';
 import { Story } from '../stories.model';
 import { StoryService } from '../story.service';
 import { FirebaseObjectObservable } from 'angularfire2/database';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-stories-detail',
@@ -13,10 +14,12 @@ import { FirebaseObjectObservable } from 'angularfire2/database';
 })
 
 export class StoriesDetailComponent implements OnInit {
+  stories: FirebaseListObservable<any[]>;
   id: string;
   currentRoute: string = this.router.url;
-  storyToDisplay;
+  
 
+  storyToDisplay;
   constructor(
     private route: ActivatedRoute,
     private location: Location,
@@ -29,6 +32,12 @@ export class StoriesDetailComponent implements OnInit {
       this.id = urlParameters['id'];
     });
     this.storyToDisplay = this.storyService.getStoryById(this.id);
+        console.log(this.router.url);
+  }
+
+  goToEditPage(storyToDisplay) {
+    console.log(storyToDisplay);
+    this.router.navigate(['stories', storyToDisplay.$key])
   }
 
 }

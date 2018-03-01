@@ -19,6 +19,7 @@ constructor(private router: Router, private storyService: StoryService) { }
 
 goToDetailsPage(clickedStory) {
   this.router.navigate(['stories', clickedStory.$key])
+  console.log(clickedStory.$key);
 }
   ngOnInit() {
     this.stories = this.storyService.getStories();

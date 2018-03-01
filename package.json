@@ -50,5 +50,13 @@
   },
   "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.",
   "main": "karma.conf.js",
-  "author": "Ross and Kyle"
+  "author": "Ross and Kyle",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ktenzel/forum-Angular.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ktenzel/forum-Angular/issues"
+  },
+  "homepage": "https://github.com/ktenzel/forum-Angular#readme"
 }

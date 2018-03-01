@@ -1,17 +1,27 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { StoryService } from '../story.service';
 import { Story } from '../stories.model';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 
 @Component({
-  selector: 'app-edit',
+  selector: 'app-edit-story',
   templateUrl: './edit-story.component.html',
-  styleUrls: ['./edit-story.component.css']
+  styleUrls: ['./edit-story.component.css'],
+  providers: [StoryService]
 })
 export class EditStoryComponent implements OnInit {
   @Input() selectedStory;
+  
 
-  constructor() { }
+  constructor(private router: Router, private storyService: StoryService) { }
 
   ngOnInit() {
+
   }
+
+  beginUpdatingStory(storyToUpdate){
+    this.storyService.updateStory(storyToUpdate);
+  }
+
 
 }

@@ -55,7 +55,7 @@ const appRoutes: Routes = [
     component: AddComponent
   },
   {
-    path: 'edit-story',
+    path: 'app-edit-story',
     component: EditStoryComponent
   }
 ];
