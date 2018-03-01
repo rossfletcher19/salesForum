@@ -30,4 +30,9 @@ getStories() {
     var storyEntryInFirebase = this.getStoryById(localUpdateStory.$key);
     storyEntryInFirebase.update({title: localUpdateStory.title, content: localUpdateStory.content,  link: localUpdateStory.link});
   }
+  deleteStory(localStoryToDelete){
+    var storyEntryInFirebase = this.getStoryById(localStoryToDelete.$key);
+    storyEntryInFirebase.remove();
+  }
+  
 }

@@ -11,7 +11,7 @@ import { EventDetailComponent } from './event-detail/event-detail.component';
 import { AdminComponent } from './admin/admin.component';
 import { AddComponent } from './add/add.component';
 import { EditStoryComponent } from './edit-story/edit-story.component';
-import { DeleteComponent } from './delete/delete.component';
+
 
 
 const appRoutes: Routes = [
@@ -58,10 +58,6 @@ const appRoutes: Routes = [
   {
     path: 'app-edit-story',
     component: EditStoryComponent
-  },
-  {
-    path: 'app-delete',
-    component: DeleteComponent
   }
 ];
 

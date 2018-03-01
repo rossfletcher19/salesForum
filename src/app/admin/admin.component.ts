@@ -7,7 +7,7 @@ import { Event } from '../event.model';
 import { EventService } from '../event.service';
 import { Router } from '@angular/router';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
-
+import { DeleteComponent } from '../delete/delete.component';
 
 @Component({
   selector: 'app-admin',
@@ -31,11 +31,11 @@ export class AdminComponent implements OnInit {
     this.router.navigate(['stories', clickedStory.$key])
     console.log(clickedStory.$key);
   }
-
-  deleteStoryEntry(clickedStory) {
-
-
-
+  
+  beginDeletingStory(story){
+    if(confirm("Are you sure you want to delete this item from the inventory?")){
+      this.storyService.deleteStory(story);
+      console.log(story);
+    }
   }
-
 }
