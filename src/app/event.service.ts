@@ -23,5 +23,8 @@ export class EventService {
     //   }
     // }
   }
-
+  updateEvent(localUpdateEvent){
+    var storyEntryInFirebase = this.getEventById(localUpdateEvent.$key);
+    storyEntryInFirebase.update({title: localUpdateEvent.title, content: localUpdateEvent.content,  link: localUpdateEvent.link});
+  }
 }

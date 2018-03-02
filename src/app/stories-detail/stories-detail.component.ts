@@ -17,8 +17,6 @@ export class StoriesDetailComponent implements OnInit {
   stories: FirebaseListObservable<any[]>;
   id: string;
   currentRoute: string = this.router.url;
-  
-
   storyToDisplay;
   constructor(
     private route: ActivatedRoute,

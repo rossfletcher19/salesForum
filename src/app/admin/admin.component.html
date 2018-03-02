@@ -3,12 +3,25 @@
 <hr>
 <div *ngFor="let story of stories | async" class="panel panel-default">
   <div class="panel-body">
-    <h4 (click)="goToDetailsPage(story)"><em>{{story.title}}</em><br></h4>
+    <h4 (click)="goToStoryPage(story)"><em>{{story.title}}</em><br></h4>
     <h6>postId: {{story.$key}}</h6>
     <div *ngIf="currentRoute === '/admin'">
       <button (click)="beginDeletingStory(story)">Delete</button>
     </div>
     <hr>
 
+  </div>
+</div>
+<hr>
+<h3>Events.admin</h3>
+<hr>
+<div *ngFor="let event of events | async" class="panel panel-default">
+  <div class="panel-body">
+    <h4 (click)="goToDetailPage(event)"><em>{{event.title}}</em><br></h4>
+    <h6>postId: {{event.$key}}</h6>
+    <div *ngIf="currentRoute === '/admin'">
+      <button (click)="beginDeletingEvent(event)">Delete</button>
+    </div>
+    <hr>
   </div>
 </div>

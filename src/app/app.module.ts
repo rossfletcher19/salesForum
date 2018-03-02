@@ -19,7 +19,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AdminComponent } from './admin/admin.component';
 import { AddComponent } from './add/add.component';
 import { EditStoryComponent } from './edit-story/edit-story.component';
-import { DeleteComponent } from './delete/delete.component';
+import { EditEventComponent } from './edit-event/edit-event.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -42,8 +42,8 @@ export const firebaseConfig = {
     AdminComponent,
     AddComponent,
     EditStoryComponent,
-    DeleteComponent
-  ],
+    EditEventComponent
+    ],
   imports: [
     BrowserModule,
     FormsModule,

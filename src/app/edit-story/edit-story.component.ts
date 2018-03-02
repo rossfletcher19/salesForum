@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { StoryService } from '../story.service';
-import { Story } from '../stories.model';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 
 @Component({
@@ -11,7 +10,7 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 })
 export class EditStoryComponent implements OnInit {
   @Input() selectedStory;
-  
+
 
   constructor(private router: Router, private storyService: StoryService) { }
 
